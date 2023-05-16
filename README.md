@@ -25,5 +25,5 @@ g++ --version
 ## Usage <a name = "usage"></a>
 
 ```
-g++ jogoadv.cpp -o jogoadv
+g++ ./main.cpp -o ./main
 ```
