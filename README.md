@@ -1,4 +1,4 @@
-# CPlusPlus guess game
+# C++ guess game
 
 ## Table of Contents
 
