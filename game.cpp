@@ -1,14 +1,17 @@
-#include<iostream> /*lib de I/O*/
+#include <iostream> /*lib de I/O*/
+#include <cstdlib>
 using namespace std;
+
+
+
 void println(string value) { 
     cout << value << endl;
 }
 
-
 namespace Game {
     class GuessGame {
         public:
-            const int SECRET_NUM = 32;
+            const int SECRET_NUM = rand() % 100; /*valores de 1 a 100*/
             int attempts = 0;
             double score = 1000.0;
             bool debug = true;
@@ -16,7 +19,7 @@ namespace Game {
 
             void play() {
                 if (debug) {
-                    cout << "Secret number is : " << SECRET_NUM << endl;
+                    cout << "[DEBUG] Secret number is : " << SECRET_NUM << endl;
                 }
                 println("******************************");
                 println("*  Welcome to Guessing Game  *");
@@ -43,7 +46,6 @@ namespace Game {
             void validate_guess(int current_guess) {
                 attempts ++;
                 score = score -  calculate_penalty(current_guess);
-                cout << score;
                 if (current_guess > SECRET_NUM)
                 {   
                     inform_response("You guessed too high! try again\n");
