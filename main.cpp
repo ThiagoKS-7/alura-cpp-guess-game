@@ -1,4 +1,4 @@
-#include"game.cpp"
+#include"src/game.cpp"
 #include <ctime>
 
 using namespace Game;

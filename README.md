@@ -17,13 +17,19 @@ Simple c++ program
 
 check g++ version
 
-```
+```bash
 g++ --version
 ```
 
 
 ## Usage <a name = "usage"></a>
 
+Compile your program
+```bash
+g++ ./main.cpp -o ./main.out
 ```
-g++ ./main.cpp -o ./main
+
+Then run it, using
+```bash
+./main.out
 ```
